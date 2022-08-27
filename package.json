@@ -1,14 +1,14 @@
 {
-  "name": "whatsasena",
+  "name": "inrl-md",
   "version": "0.10.0",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./whatsAsena/bot.js",
+  "description": " project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "main": "./enokoynd/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Quiec/WhatsAsena.git"
+    "url": "git+https://github.com/inrlinrlfazfaz-inrl-faz-inrl-faz-3333/enokoynd.git"
   },
   "keywords": [
     "whatsapp"
@@ -16,9 +16,9 @@
   "author": "AsenaDev / Yusuf Usta",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Quiec/WhatsAsena/issues"
+    "url": "https://github.com/inrlinrlfazfaz-inrl-faz-inrl-faz-3333/enokoynd/issues"
   },
-  "homepage": "https://github.com/Quiec/WhatsAsena#readme",
+  "homepage": "https://github.com/inrlinrlfazfaz-inrl-faz-inrl-faz-3333/enokoynd#readme",
   "dependencies": {
     "@adiwajshing/baileys": "4.3.0",
     "@adiwajshing/keyed-db": "^0.2.4",
