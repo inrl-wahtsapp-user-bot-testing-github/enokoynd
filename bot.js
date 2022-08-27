@@ -218,4 +218,4 @@ async function whatsappBot() {
        }
 }
 
-whatsAsena();
+whatsappBot();
