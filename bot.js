@@ -89,7 +89,6 @@ async function whatsappBot() {
    
             store.bind(conn.ev)    
 
-    conn.ev.on('open', async () => {
         console.log(
             chalk.green.bold('✅ Login successful!')
         );
@@ -123,7 +122,6 @@ async function whatsappBot() {
         console.log(
             chalk.green.bold('✅ Plugins installed!')
         );
-    });
     
     conn.ev.on("messages.upsert",async msg => {
         if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
