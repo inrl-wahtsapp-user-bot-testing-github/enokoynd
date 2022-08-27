@@ -1,15 +1,7 @@
-FROM fusuf/whatsasena:latest
-
-RUN git clone $GITHUB_REPO_URL /root/WhatsAsena
-WORKDIR /root/WhatsAsena/
-ENV TZ=Europe/Istanbul
+FROM quay.io/inrlwabot/inrl-bot-md:latest
+RUN git clone https://github.com/inrlinrlfazfaz-inrl-faz-inrl-faz-3333/oruthanum-eduthond-pokaruth /root/inrl/
+WORKDIR /root/inrl/
+ENV TZ=Asia/Kolkata
 RUN npm install supervisor -g
-RUN apk --no-cache --virtual build-dependencies add \
-    python \
-    make \
-    g++ \
-    && npm install \
-    && apk del build-dependencies
-RUN npm install
-
+RUN yarn install --ignore-engines
 CMD ["node", "bot.js"]
