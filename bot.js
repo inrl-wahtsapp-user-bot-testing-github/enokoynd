@@ -14,6 +14,7 @@ const {
           generateWAMessageFromContent, 
           generateMessageID, 
           downloadContentFromMessage,
+          WAPresence,
           jidDecode,
           proto 
 } = require("@adiwajshing/baileys");
@@ -124,7 +125,7 @@ async function whatsappBot() {
         );
     });
     
-    conn.ev.on('message-new', async msg => {
+    conn.ev.on("messages.upsert",async msg => {
         if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
 
         if (config.NO_ONLINE) {
@@ -233,9 +234,7 @@ async function whatsappBot() {
     {
         console.log('error')
                 return;
-            }
-        }
-    }
+       }
 }
 
 whatsAsena();
