@@ -26,7 +26,7 @@ const {
            Message,
            Image,
            Video,
-} = require('./lib/');
+} = require('./whatsasena/');
 const { DataTypes } = require('sequelize');
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) });
 const { getMessage } = require("./plugins/sql/greetings");
